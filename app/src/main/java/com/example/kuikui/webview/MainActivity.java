@@ -125,6 +125,12 @@ public class MainActivity extends AppCompatActivity {
 
     //改写物理按键--返回的逻辑
 
+    /**
+     * 测试
+     * @param keyCode
+     * @param event
+     * @return
+     */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
 
