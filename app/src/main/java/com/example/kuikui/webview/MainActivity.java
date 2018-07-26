@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -145,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 System.exit(0);//退出程序
             }
+            Log.i("tag","test");
         }
         return super.onKeyDown(keyCode, event);
     }
