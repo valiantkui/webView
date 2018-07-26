@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function()
+			{
+				alert("444");
+			Array city=new Array();
+			Array country=new Array(); 
+			city[0]=["郑州","驻马店","开封"];
+			city[1]=["朝阳","北京市","海淀"];
+			city[2]=["广州","东皖","佛山"];
+			country[0][0]=["郑州1","郑州2","郑州3"];
+			country[0][1]=["驻马店1","驻马店2","驻马店3"];
+			country[0][2]=["开封1","开封2","开封3"];
+			
+			country[1][0]=["朝阳1","朝阳2","朝阳3"];
+			country[1][1]=["北京市1","北京市2","北京市3"];
+			country[1][2]=["海淀1","海淀2","海淀3"];
+			
+			country[2][0]=["广州1","广州2","广州3"];
+			country[2][1]=["东皖1","东皖2","东皖3"];
+			country[2][2]=["佛山1","佛山2","佛山3"];
+			alert("333");
+			}
+			function provinceChange()
+			{
+				var province=document.getElementById("province");
+				var city=document.getElementById("city");
+				for(var i=0;i<city[province.value];i++)
+				{
+					var op=document.createElement("option");
+					op.value=i;
+					op.innerHTML=city[province.value][i];
+					city.appendChild(op);
+				}
+			}
+			
+		</script>
+	</head>
+	<body>	
+		<select id="province" onchange="provinceChange()">
+			<option>---请选择---</option>
+			<option value="0">河南</option>
+			<option value="1">北京</option>
+			<option value="2">广东</option>
+		</select>
+		
+		<select id="city" onchange="city_change()">
+			<option>---请选择---</option>
+			
+		</select>
+		
+		<select id="contry" >
+			
+			<option>---请选择---</option>
+		</select>
+		
+	</body>
+</html>
